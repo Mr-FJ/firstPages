@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录/注册</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    <div class="wrapper login">
+        <div class="iconcode tab">
+            <i class="iconfont icon-denglujiemian-erweimaqiehuan"></i>
+            <i class="iconfont icon-diannao hidden"></i>
+        </div>
+
+        <!-- 登陆切换点击 -->
+        <div class="title">
+            <span id="user" class="selected">短信登陆 / 注册</span>
+            <span id="pass">密码登陆</span>
+        </div>
+
+
+        <!-- 短信登陆/注册 -->
+        <div id="item-user" class="container">
+            <div class="read">
+                请仔细阅读
+                <a href="">豆瓣使用协议、隐私政策</a>
+            </div>
+            <form>
+                <div class="item phone">
+                    <input id="001" type="text" value="" placeholder="手机号" maxlength="11">
+                    <div id="coutry" class="coutry">
+                        +86
+                    </div>
+
+                </div>
+                <div class="item code">
+                    <input type="text" placeholder="验证码" maxlength="6">
+                    <div class="v-code">
+                        <a href="">获取验证码</a>
+                    </div>
+                </div>
+                <div class="item btn  select">
+                    <a href="">登陆豆瓣</a>
+                </div>
+
+            </form>
+            <div class="message">
+                <div class="auto-login">
+                    <label class="checkedbox">
+                        <input type="checkbox">
+                        <span class="radiobox"></span>
+                        <span>下次自动登录</span>
+                    </label>
+
+                </div>
+                <span class="not-code">
+                    <a href="">收不到验证码</a>
+                </span>
+            </div>
+        </div>
+        <!-- 密码登陆 -->
+        <div id="item-pass" class="container password hidden">
+            <div class="read clearfix"><a href="">找回密码</a></div>
+            <form>
+                <div class="item phone">
+                    <input type="text" placeholder="手机号/邮箱" maxlength="11">
+                </div>
+                <div class="item code">
+                    <input type="password" placeholder="密码" maxlength="14">
+                </div>
+                <div class="item btn select">
+                    <a href="">登陆豆瓣</a>
+                </div>
+            </form>
+            <div class="message">
+                <div class="auto-login">
+                    <label class="checkedbox">
+                        <input type="checkbox">
+                        <span class="radiobox"></span>
+                        <span>下次自动登录</span>
+                    </label>
+
+                </div>
+                <span class="not-code">
+                    <a href="">海外手机登陆</a>
+                </span>
+
+            </div>
+        </div>
+
+
+        <!-- 微信微博登陆 -->
+        <div class="wechat">
+            <span>第三方登陆：</span>
+            <i class="iconfont icon-weixin-copy"></i>
+            <i class="iconfont icon-weibo"></i>
+        </div>
+    </div>
+
+    <!-- 切换二维码登陆 -->
+    <div class="wrapper QRcode hidden">
+        <div class="iconcode tab">
+            <i class="iconfont icon-denglujiemian-erweimaqiehuan"></i>
+            <i class="iconfont icon-diannao hidden"></i>
+        </div>
+        <div class="title">
+            <span>二维码登陆</span>
+        </div>
+        <div class="img">
+            <img src="../img/QRcode.png" alt="扫码登陆">
+        </div>
+        <div class="txt">
+            请打开豆瓣客户端扫一扫
+        </div>
+
+    </div>
+
+
+    <!-- 手机国际区号 -->
+    <div id="showcoutry" class="couteycode hidden">
+        <div class="container">
+            <h3>选择国际区号
+                <span id="off" class="iconfont icon-cuowu"></span>
+            </h3>
+            <div class="list-code">
+                <ul class="clearfix">
+                    <li><span class="left select">中国大陆</span>
+                        <i class="iconfont icon--success"></i>
+                        <span class="right">+86</span></li>
+                    <li><span class="left">国家2</span><span class="right">+86</span></li>
+                    <li><span class="left">国家3</span><span class="right">+6</span></li>
+                    <li><span class="left">国家4</span><span class="right">+6</span></li>
+                    <li><span class="left">国家5</span><span class="right">+6</span></li>
+                    <li><span class="left">国家6</span><span class="right">+6</span></li>
+                    <li><span class="left">国家7</span><span class="right">+6</span></li>
+                    <li><span class="left">国家8</span><span class="right">+6</span></li>
+                    <li><span class="left">国家9</span><span class="right">+6</span></li>
+                    <li><span class="left">国家10</span>
+                        <spa class="right">+10</span>
+                    </li>
+                    <li><span class="left">国家11</span>
+                        <spa class="right">+11</span>
+                    </li>
+                    <li><span class="left">国家12</span>
+                        <spa class="right">+12</span>
+                    </li>
+                    <li><span class="left">国家13</span>
+                        <spa class="right">+13</span>
+                    </li>
+                    <li><span class="left">国家14</span>
+                        <spa class="right">+14</span>
+                    </li>
+                    <li><span class="left">国家15</span>
+                        <spa class="right">+15</span>
+                    </li>
+                    <li><span class="left">国家16</span>
+                        <spa class="right">+16</span>
+                    </li>
+                    <li><span class="left">国家17</span>
+                        <spa class="right">+17</span>
+                    </li>
+                    <li><span class="left">国家18</span>
+                        <spa class="right">+18</span>
+                    </li>
+                    <li><span class="left">国家19</span>
+                        <spa class="right">+19</span>
+                    </li>
+                    <li><span class="left">国家20</span>
+                        <spa class="right">+20</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

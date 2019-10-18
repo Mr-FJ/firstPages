@@ -1,0 +1,1064 @@
+@import"reset.css";
+@import"common.css";
+body {
+    padding-top: 30px;
+    line-height: 1.62;
+}
+
+/* 通用样式 */
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.wrapper .side-left {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.wrapper .side-left h2 {
+    margin-bottom: 6px;
+}
+
+.wrapper .side-left h2 a {
+    font-size: 24px;
+}
+
+.wrapper .side-right {
+    width: 256px;
+    margin-left: 30px;
+}
+
+.wrapper .main {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.wrapper .container {
+    margin: 10px auto;
+}
+
+.wrapper .wrapper-bg {
+    padding: 10px 0;
+}
+
+.wrapper .wrapper-bg:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.wrapper .wrapper-bg:last-child{
+    background: #fff;
+}
+
+.wrapper .container img {
+    display: block;
+}
+
+.wrapper .container .sort h2 {
+    color: #072;
+    margin-bottom: 12px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.wrapper .container .sort h2:after {
+    content: " · · · · · · ";
+}
+
+.wrapper .container .sort .more {
+    display: inline-block;
+}
+
+.wrapper .container .sort .more:before {
+    content: "(";
+    color: #666;
+}
+
+.wrapper .container .sort .more:after {
+    content: ")";
+    color: #666;
+}
+
+a {
+    color: #37a;
+    font-size: 12px;
+}
+
+a:visited {
+    color: #669;
+}
+
+a:hover {
+    color: #ffff;
+    background: #37a;
+}
+
+a:active {
+    background: #f93;
+    color: #fff;
+}
+
+.wrapper .container .hot-list {
+    margin-top: -10px;
+}
+
+.wrapper .container .hot-list li {
+    margin-bottom: 5px;
+}
+
+.wrapper .container .hot-list li a {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.wrapper .container .hot-list li span {
+    color: #aaaaaa;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+.wrapper .side-left ul {
+    overflow: hidden;
+}
+
+.wrapper .side-left ul li a {
+    font-size: 14px;
+}
+
+.wrapper .side-left ul li {
+    height: 26px;
+}
+
+.wrapper .side-left ul li .moive-new {
+    width: 17px;
+    height: 7px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 6px;
+    /* position: relative;
+    top: -17px;
+    right: -45px; */
+}
+
+.wrapper .main ul li .btn-buy {
+    display: inline-block;
+    width: 48px;
+    height: 23px;
+    padding: 2px 10px;
+    background: #1c8bd0;
+    color: #fff;
+    line-height: 23px;
+    border-radius: 2px;
+}
+
+.wrapper .movie .main ul li .btn-buy:hover {
+    background: #047fcb;
+}
+
+.wrapper .main ul li .rating {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.wrapper .main ul li .rating i {
+    color: #e09015;
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+/* 通用样式结束 */
+
+/* 页头 */
+
+.header {
+    width: 100%;
+    background: #fff;
+}
+
+.header .container>div {
+    height: 34px;
+}
+
+.header .logo {
+    width: 160px;
+    margin-right: 20px;
+}
+
+.header .container .search {
+    width: 272px;
+    height: 32px;
+    border: 1px solid #c3c3c3;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header .menu {
+    width: 482px;
+    height: 21px;
+    line-height: 10;
+    overflow: hidden;
+    margin-top: 7px;
+}
+
+/* ----------分割线---------- */
+
+.header .logo h1 a {
+    display: block;
+    height: 0;
+    padding-top: 34px;
+    overflow: hidden;
+    background: url("../img/logo.png") no-repeat left top/100%;
+}
+
+.header .search input {
+    width: 238px;
+    padding: 2px 0;
+    vertical-align: text-top;
+}
+
+.header .search input::placeholder {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.header .search button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    background: transparent;
+    color: #ccc;
+}
+
+.header .search button i {
+    font-size: 12px;
+}
+
+/* ----------分割线---------- */
+
+.header .menu a {
+    background: url("../img/nav_logo.png") no-repeat left top/463px 20px;
+    width: 40px;
+    height: 20px;
+    float: left;
+    margin-left: 19px;
+}
+
+.header .menu .menu-read {
+    background-position: 0 0;
+}
+
+.header .menu .menu-movie {
+    background-position: -60px 0;
+}
+
+.header .menu .menu-music {
+    background-position: -120px 0;
+}
+
+.header .menu .menu-group {
+    background-position: -180px 0;
+}
+
+.header .menu .menu-city {
+    background-position: -300px 0;
+}
+
+.header .menu .menu-FM {
+    background-position: -240px 0;
+}
+
+.header .menu .menu-time {
+    background-position: -360px 0;
+}
+
+.header .menu .menu-doupin {
+    width: 43px;
+    background-position: -420px 0;
+}
+
+/* 页头结束 */
+
+/* 横幅 */
+
+.bigbox {
+    width: 100%;
+    background: #EDF4ED;
+}
+
+.bigbox .banner {
+    margin: 25px auto;
+    padding-right: 10px;
+    position: relative;
+}
+
+.bigbox .banner .banner-bg {
+    position: absolute;
+    left: -180px;
+    top: 0;
+    width: 660px;
+    height: 300px;
+    background: url(../img/phone.jpg) no-repeat left top/auto 100%;
+}
+
+.bigbox .banner .app {
+    width: 150px;
+    height: 120px;
+    margin: 80px 20px;
+}
+
+.bigbox .banner .app h2 {
+    font-size: 25px;
+    color: #111;
+    margin: 3px 0;
+}
+
+.bigbox .banner .app .app-code {
+    margin-top: 20px;
+}
+
+.bigbox .banner .app .app-code .btn {
+    background: #00B51D;
+    width: 115px;
+    height: 30px;
+    border-radius: 2px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.bigbox .banner .app .app-code .ios {
+    width: 30px;
+    height: 30px;
+    /* background: greenyellow; */
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 30px;
+    position: relative;
+    line-height: 1;
+}
+
+.bigbox .banner .app .app-code .ios:hover .ios-up {
+    display: block;
+}
+
+.bigbox .banner .app .app-code .ios-up {
+    width: 200px;
+    height: 225px;
+    background: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    padding: 20px 20px 5px;
+    text-align: center;
+    display: none;
+}
+
+.bigbox .banner .app .app-code .ios-up img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.bigbox .banner .app .app-code .ios-up p {
+    font-size: 12px;
+    color: #666;
+}
+
+.wrapper .hot .main .main-photo, .wrapper .hot .notes {
+    display: inline-block;
+}
+
+/* 横幅结束 */
+
+/* 国家70周年宣传 */
+
+.china .container {
+    height: 95px;
+}
+
+.china .container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 国家70周年宣传结束 */
+
+/* 热点内容 */
+
+.wrapper .hot .side-right img {
+    width: 250px;
+    height: 125px;
+    margin: 15px 0;
+}
+
+.wrapper .hot .main .main-photo {
+    width: 350px;
+    margin-right: 20px;
+}
+
+.wrapper .hot .main .main-photo .pic {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 170px;
+}
+
+.wrapper .hot .main .main-photo .pic:nth-child(odd) {
+    margin-right: 5px;
+}
+
+.wrapper .hot .main .main-photo .pic span {
+    color: #999;
+    font-size: 12px;
+}
+
+.wrapper .hot .main .notes {
+    width: 275px;
+    vertical-align: top;
+}
+
+.wrapper .hot .main .notes .first {
+    color: #999;
+    font-size: 12px;
+}
+
+.wrapper .hot .main .notes .first p {
+    color: #666;
+}
+
+/* 热点内容结束 */
+
+/* 豆瓣时间 */
+
+.wrapper .time .side-left h2 a {
+    color: #494949;
+}
+
+.wrapper .time .side-left h2 a:hover {
+    color: #fff;
+}
+
+.wrapper .time .main .time-list li {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 60px 30px 0;
+}
+
+.wrapper .time .main .time-list li a::before {
+    position: absolute;
+    right: 7px;
+    bottom: 8px;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.wrapper .time .main .time-list li a img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.wrapper .time .main .time-list li a {
+    font-size: 13px;
+    color: #333333;
+    display: block;
+    position: relative;
+}
+
+.wrapper .time .main .time-list li a:hover {
+    color: #fff;
+}
+
+.wrapper .time .main .time-list li span {
+    color: #999999;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* 豆瓣时间结束 */
+
+/* 视频 */
+
+.wrapper .video .side-left h2 a {
+    color: #494949;
+}
+
+.wrapper .video .side-left h2 a:hover {
+    color: #fff;
+}
+
+.wrapper .video .main .video-list li {
+    width: 250px;
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.wrapper .video .main .video-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.wrapper .video .main .video-list {
+    margin-bottom: 15px;
+}
+
+.wrapper .video .main .video-list a::before {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    font-size: 22px;
+    color: #fff;
+}
+
+.wrapper .video .main .video-list li a {
+    font-size: 13px;
+    color: #494949;
+}
+
+.wrapper .video .main .video-list li .iconfont {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 140px
+}
+
+.wrapper .video .main .video-list li a:hover {
+    color: #ffffff;
+    background: #37a;
+}
+
+.wrapper .video .main .video-list li a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 视频结束 */
+
+/* 电影 */
+
+.wrapper .movie a {
+    color: #27a;
+}
+
+.wrapper .movie a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.wrapper .movie .side-right .movie-ify li {
+    display: inline-block;
+    width: 48px;
+    height: 20px;
+}
+
+.wrapper .movie .side-right .movie-ify li:nth-child(5n) {
+    width: auto;
+}
+
+.wrapper .movie .side-right .movie-ify {
+    margin-bottom: 30px;
+}
+
+.wrapper .movie .side-right .movie-ify2 li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.wrapper .movie .side-right .movie-ify2 li a {
+    margin-left: 5px;
+}
+
+.wrapper .movie .main ul li {
+    width: 100px;
+    display: inline-block;
+    margin-right: 38px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.wrapper .movie .main ul li:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.wrapper .movie .main ul li .pic img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.wrapper .movie .main ul li .title {
+    font-size: 13px;
+    word-wrap: break-word;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.wrapper .movie .main ul li .title a {
+    color: #333;
+}
+
+.wrapper .movie .main ul li .title a:hover {
+    color: #fff;
+}
+
+/* 电影结束 */
+
+/* 小组 */
+
+.wrapper .group .side-right .title {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.wrapper .group .side-right ul {
+    line-height: 1.2;
+}
+
+.wrapper .group .side-right ul li {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.wrapper .group .side-right ul li:nth-child(6n) {
+    margin-right: 0px;
+}
+
+.wrapper .group .main ul li {
+    display: inline-block;
+    width: 248px;
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+
+.wrapper .group .main .pic {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.wrapper .group .main .info {
+    line-height: 1.2;
+}
+
+.wrapper .group .main li .pic a img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .group .main li .info .title a {
+    font-size: 13px;
+}
+
+.wrapper .group .main li .info span {
+    font-size: 12px;
+    color: #999;
+}
+
+.wrapper .group a {
+    color: #007982;
+}
+
+.wrapper .group a:hover, .wrapper .group a:active {
+    color: #fff;
+}
+
+/* 小组结束 */
+
+/* 读书 */
+
+.wrapper .read a {
+    color: #614e3c;
+}
+
+.wrapper .read a:hover, .wrapper .read a:active {
+    color: #fff;
+}
+
+.wrapper .side-left .app-adv {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: 15px;
+}
+
+.wrapper .side-left .app-adv:hover {
+    background: none;
+}
+
+.wrapper .side-left .app-adv .img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/cola.jpg") no-repeat;
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 10px;
+}
+
+.wrapper .read .side-right ul {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+.wrapper .read .side-right ul:last-child {
+    border: none;
+}
+
+.wrapper .read .side-right ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* .wrapper .read .side-right ul li:nth-child() {
+    margin-right: 0;
+} */
+
+.wrapper .read .side-right ul li a {
+    color: #614e3c;
+    font-size: 12px;
+}
+
+.wrapper .read .side-right ul li a:hover, .wrapper .read .side-right ul li a:active {
+    color: #fff;
+}
+
+.wrapper .read .side-right ul li:first-child {
+    font-size: 12px;
+    color: #999;
+}
+
+.wrapper .read .main .read-item li {
+    width: 133px;
+    color: #111;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.wrapper .read .main .read-item li .title span {
+    display: block;
+}
+
+.wrapper .read .main .read-item li .title a {
+    font-size: 13px;
+    color: #614e3c;
+}
+
+.wrapper .read .main .read-item li .title a:hover, .wrapper .read .main .read-item li .title a:active {
+    color: #fff;
+}
+
+.wrapper .read .main .read-item li .pic {
+    margin-bottom: 10px;
+    height: 148px;
+}
+
+.wrapper .read .main .read-item li .pic img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.wrapper .read .main .read-item li .btn-buy {
+    color: #fff;
+    background: #999a95;
+}
+
+/* 读书结束 */
+
+/* 音乐袭来 */
+
+.wrapper .music .side-left h2 a {
+    color: #f38c00;
+}
+
+.wrapper .music .side-left a {
+    color: #555d53;
+}
+
+.wrapper .music .side-left a:hover, .wrapper .music .side-left a:active {
+    color: #fff;
+}
+
+.wrapper .music .side-left .app-adv.adfm i {
+    background-position: -250px 0;
+}
+
+.wrapper .music .side-left .app-adv.admsc i {
+    background-position: -50px 0;
+}
+
+.wrapper .music .side-right ul li {
+    margin-bottom: 16px;
+}
+
+.wrapper .music .side-right ul li .number {
+    margin-right: 10px;
+}
+
+.wrapper .music .side-right ul li .pic-player {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.wrapper .music .side-right ul li .content {
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.wrapper .music .side-right ul li .content span {
+    display: block;
+    color: #999;
+}
+
+.wrapper .music .main li {
+    width: 133px;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.wrapper .music .main li .pic {
+    width: 133px;
+}
+
+.wrapper .music .main li .pic a img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.wrapper .music .main .music-list li {
+    height: 136px;
+}
+
+.wrapper .music .main .music-top li .title {
+    font-size: 12px;
+    text-align: center;
+}
+
+.wrapper .music .main .music-list .cover {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.wrapper .music .main .music-list .cover i {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 26px;
+    top: 0;
+    background: url("../img/bofang.png")no-repeat 50% 50%;
+}
+
+.wrapper .music .main .music-list li .title {
+    font-size: 13px;
+    color: #111;
+    cursor: initial;
+    text-align: center;
+}
+
+/* 音乐结束 */
+
+/* 豆品开始 */
+
+.wrapper .doupin a {
+    color: #3377A9;
+}
+
+.wrapper .doupin a:hover, .wrapper .doupin a:active {
+    color: #fff;
+}
+
+.wrapper .doupin h2 a {
+    color: #1f9432;
+}
+
+.wrapper .doupin h2 a:hover, .wrapper .doupin h2 a:active {
+    color: #fff;
+}
+
+.wrapper .doupin .side-right .hot img {
+    width: 265px;
+    height: 95px;
+}
+
+.wrapper .doupin .side-right .hot a {
+    font-size: 14px;
+}
+
+.wrapper .doupin .side-right .hot {
+    margin-bottom: 25px;
+}
+
+.wrapper .doupin .main li {
+    display: inline-block;
+    width: 240px;
+    margin: 0 20px 30px 0;
+}
+
+.wrapper .doupin .main li:nth-child(even) {
+    margin-right: 0;
+}
+
+.wrapper .doupin .main li .pic img {
+    width: 240px;
+    height: 220px;
+}
+
+.wrapper .doupin .main li .title {
+    margin-top: 10px;
+}
+
+.wrapper .doupin .main li .title a {
+    font-size: 16px;
+}
+
+.wrapper .doupin .main li .title span {
+    color: #E55457;
+    float: right;
+}
+
+/* 豆品结束 */
+
+/* 同城 */
+
+.wrapper .city .side-left h2 a {
+    color: #ec5303;
+}
+
+.wrapper .city .side-left h2 a:hover, .wrapper .city .side-left h2 a:active {
+    color: #fff;
+}
+
+.wrapper .city li a {
+    color: #643;
+}
+
+.wrapper .city li a:hover, .wrapper .city li a:active {
+    color: #fff;
+}
+
+.wrapper .city .side-right li:first-child {
+    display: block;
+}
+
+.wrapper .city .side-right li:first-child a {
+    color: #333;
+    font-size: 14px;
+}
+
+.wrapper .city .side-right li:first-child a:hover, .wrapper .city .side-right li:first-child a.active {
+    color: #fff;
+}
+
+.wrapper .city .side-right li {
+    display: inline-block;
+}
+
+.wrapper .city .side-right ul {
+    margin: 7px 0 10px 0;
+}
+
+.wrapper .city .main li .pic {
+    display: inline-block;
+    width: 70px;
+    height: 90px;
+    margin-right: 8px;
+}
+
+.wrapper .city .main li .pic img {
+    width: 100%;
+}
+
+.wrapper .city .main li {
+    display: inline-block;
+    width: 248px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.wrapper .city .main li:nth-child(even) {
+    margin-left: 20px;
+}
+
+.wrapper .city .main li .info {
+    display: inline-block;
+    width: 160px;
+    vertical-align: top;
+}
+
+.wrapper .city .main li .info .title {
+    font-size: 13px;
+}
+
+.wrapper .city .main li .info div {
+    font-size: 12px;
+    color: #666;
+}
+
+.wrapper .city .main li .info .where {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 同城结束 */
+
+/* 页脚开始 */
+.wrapper .foot{
+    border-top: 1px dashed #dcdcdc;
+    
+    margin-bottom: 20px;
+}
+.wrapper .foot .Me {
+    width: 412px;
+    margin-top: 12px;
+}
+
+.wrapper .foot .Me li {
+    float: left;
+}
+
+.wrapper .foot .Me li span{
+    display: inline-block;
+    width: 5px;
+    color: #ccc;
+}
+
+.wrapper .foot .Me ul{
+    margin-bottom: 18px;
+}
+.wrapper .foot .main{
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+.wrapper .foot .main p img{
+    display: inline-block;
+    vertical-align: sub;
+}
+/* 页脚结束 */

@@ -1,0 +1,83 @@
+@import"https://at.alicdn.com/t/font_1428120_kbwesklgd4.css";
+
+/* 公共样式 */
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+.title{
+    cursor: pointer;
+}
+/* ----------分割线---------- */
+
+
+.radiobox{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #008c8c;
+    display: inline-block;
+}
+.checkedbox input:checked+.radiobox::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #00B51D;
+    border-radius: 50%;
+    margin: 4px 0 0  4px;
+}
+/* ----------分割线---------- */
+
+.star{
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    background: url("../img/moive-star.png") no-repeat left top/100%;
+}
+.star.x50{
+    background-position: 0 0px;
+}
+.star.x45{
+    background-position: 0 -11px;
+}
+.star.x40{
+    background-position: 0 -22px;
+}
+.star.x35{
+    background-position: 0 -33px;
+}
+.star.x30{
+    background-position: 0 -44px;
+}
+.star.x25{
+    background-position: 0 -55px;
+}
+.star.x20{
+    background-position: 0 -66px;
+}
+.star.x15{
+    background-position: 0 -77px;
+}
+.star.x10{
+    background-position: 0 -88px;
+}
+.star.x05{
+    background-position: 0 -99px;
+}
+.star.x00{
+    background-position: 0 -110px;
+}
